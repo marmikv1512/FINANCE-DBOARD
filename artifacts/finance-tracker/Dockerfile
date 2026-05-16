@@ -2,7 +2,7 @@ FROM node:20
 
 WORKDIR /app
 
-RUN npm install -g pnpm
+RUN npm install -g pnpm serve
 
 COPY . .
 
@@ -12,6 +12,6 @@ WORKDIR /app/artifacts/finance-tracker
 
 RUN pnpm run build
 
-EXPOSE 4173
+EXPOSE 3000
 
-CMD ["sh", "-c", "pnpm run preview --host 0.0.0.0 --port $PORT"]
+CMD ["sh", "-c", "serve -s dist -l $PORT"]
