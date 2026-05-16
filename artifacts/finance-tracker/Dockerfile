@@ -14,4 +14,4 @@ RUN pnpm run build
 
 EXPOSE 3000
 
-CMD ["sh", "-c", "serve dist -l $PORT --single"]
+CMD ["sh", "-c", "serve dist/public -l $PORT --single"]
