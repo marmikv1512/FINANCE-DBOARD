@@ -1,0 +1,20 @@
+packages:
+  "framer-motion": "For smooth page transitions and beautiful modal entry animations"
+  "recharts": "For rendering financial analytics charts (bar, line, donut)"
+  "date-fns": "For readable date formatting in transactions and charts"
+  "clsx": "For conditional class names in UI components"
+  "tailwind-merge": "For merging Tailwind classes safely in UI components"
+  "react-hook-form": "For robust form state management"
+  "@hookform/resolvers": "For Zod schema validation in forms"
+
+images:
+  - path: "artifacts/finance-tracker/public/images/logo.png"
+    description: "A minimal, modern geometric logo mark for a personal finance tracker in neon green on a transparent background, matching a dark mode Supabase aesthetic."
+    aspect_ratio: "1:1"
+  - path: "artifacts/finance-tracker/public/images/auth-bg.png"
+    description: "Abstract gradient mesh background in deep charcoal, dark slate, and subtle neon green light leaks, professional and premium."
+    aspect_ratio: "16:9"
+
+notes:
+  - "Assuming React Query v5 is provided"
+  - "Assuming all hooks are imported directly from @workspace/api-client-react"

@@ -1,0 +1,14 @@
+FROM node:20-bookworm-slim
+
+WORKDIR /app
+
+RUN corepack enable && corepack prepare pnpm@10.33.0 --activate
+
+COPY . .
+
+RUN pnpm install --no-frozen-lockfile
+RUN pnpm --filter @workspace/api-server run build
+
+ENV NODE_ENV=production
+
+CMD ["sh", "-c", "pnpm --filter @workspace/api-server run start"]
