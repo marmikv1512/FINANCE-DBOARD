@@ -8,6 +8,8 @@ COPY . .
 
 RUN pnpm install --no-frozen-lockfile
 
+WORKDIR /app/artifacts/finance-tracker
+
 RUN pnpm run build
 
 EXPOSE 4173
