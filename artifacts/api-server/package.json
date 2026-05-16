@@ -14,11 +14,12 @@
     "@workspace/db": "workspace:*",
     "cookie-parser": "^1.4.7",
     "cors": "^2",
+    "dotenv": "16.x",
     "drizzle-orm": "catalog:",
     "express": "^5",
     "pino": "^9",
     "pino-http": "^10",
-    "dotenv": "16.x"
+    "zod": "catalog:"
   },
   "devDependencies": {
     "@types/cookie-parser": "^1.4.10",

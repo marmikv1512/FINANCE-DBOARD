@@ -8,6 +8,8 @@ COPY . .
 
 RUN pnpm install --no-frozen-lockfile
 
+WORKDIR /app/artifacts/api-server
+
 RUN pnpm run build
 
 EXPOSE 3000
